@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("metro.css");
+
+INPUT 
+{ 
+	border: 1px solid #ffffff;
+	float: right;
+	font-size: 0.5em; 
+	color: #FFFFFF;
+	height: 30px; 
+	width:138px;
+	text-align: left; 
+}
+
+
+#formarea{
+	display:table;
+	width:650px;
+	height:560px;
+	margin:50px auto 50px auto;
+	font-size:30px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#ffffff;
+	text-align:center;
+	
+}
+#formarea div{
+	margin:5px;
+	float:left;
+}
+.c1{
+	width:170px;
+	height:520px;
+	background-color:#E51400;
+	
+}
+#cright{
+	width:420px;
+	height:530px;
+	margin-left:0;
+}
+
+
+
+.c2{
+	width:410px;
+	height:150px;
+	background-color:#339933;
+	margin-top:0;
+}
+
+.c3{
+	width:200px;
+	height:250px;
+}
+
+.c4{
+	width:200px;
+	height:100px;
+}
+.w300{
+	width:299px;
+}
+#button1{
+	width:200px; height:100px;
+	background-image: url(../images/submit_reg.png);
+	margin:auto auto 5px auto;
+}
+#button2{
+	width:200px; height:100px;
+	background-image: url(../images/reset_reg.png);
+	margin:auto auto 5px auto;
+}
+
+.selectbox
+{
+border: 1px solid #C0C0C0;
+width: 77px;
+height: 22px;
+clip: rect( 0px, 60px, 22px, 0px );
+overflow: hidden;
+font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+}
+.selectbox2
+{
+position: relative;
+border: 1px solid #F4F4F4;
+width: 76px;
+height: 21px;
+clip: rect( 0px, 80px, 21px, 0px );
+overflow: hidden;
+font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+}
+select
+{
+position: relative;
+left: -2px;
+top: -2px;
+width:97px;
+font-size:18px;
+line-height: 21px; color: #909993;
+border-style: none;
+border-width: 0px;
+ 
+}

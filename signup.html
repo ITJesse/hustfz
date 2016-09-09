@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>加入KingPin第一步之信息登记</title>
+
+<link rel="stylesheet" type="text/css" href="./css/signup.css" />
+<script type="text/javascript" src="./js/signup.js"> </script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+
+<script type="text/javascript">
+//屏蔽右键菜单
+document.oncontextmenu = function (event){
+	if(window.event){
+		event = window.event;
+	}try{
+		var the = event.srcElement;
+		if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+			return false;
+		}
+		return true;
+	}catch (e){
+		return false; 
+	} 
+}
+</script>
+
+
+<!--[if lt IE 8]>
+<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>    
+<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'>
+<a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='./images/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a>
+</div>    
+<div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>      
+<div style='width: 75px; float: left;'><img src='./images/ie6nomore-warning.jpg' alt='Warning!'/></div>      
+<div style='width: 275px; float: left; font-family: Arial, sans-serif;'>        
+<div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>您正在使用已经过时的IE浏览器,或者兼容模式！</div>        
+<div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>由于IE 6的安全问题以及对互联网标准的支持问题，建议您升级您的浏览器，以达到更好的浏览效果！如果你正在使用兼容模式，请将其关闭！</div>     
+</div>      
+<div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='./images/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>      
+<div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='./images/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>      
+<div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='./images/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>      
+<div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='./images/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>    
+</div>  
+</div>  
+<![endif]-->
+
+</head>
+<body>
+<div class="page">
+    <section class="demo">
+		<div class="login" class="clearfix">
+			<h2>加入KingPin</h2>
+			<h3>请谨慎填写！你只有一次机会，一旦提交，无法更改！</h3>
+			<form method="post" action="kp_submit.php" id="form-control" >
+				<div class="control-round" id="control-round">
+					<label id="label_grade" for="grade" class="active">1</label>
+					<label id="label_name" for="name">2</label>
+					<label id="label_class" for="class1">3</label>
+					<label id="label_goodat" for="goodat">4</label>
+				</div>
+				<div class="control-group">
+					<input type="radio" value= "4" id= "grade4" name="grade" style="display:none">
+					<img id="grade4_img" style="border:2px solid #1BA1E2;" src="./images/signup/grade4.png"> 
+					<input type="radio" value= "5" id= "grade5" name="grade" style="display:none">
+					<img id="grade5_img" style="border:2px solid #1BA1E2;" src="./images/signup/grade5.png"> 
+					<input type="radio" value= "6" id= "grade6" name="grade" style="display:none">
+					<img id="grade6_img" style="border:2px solid #1BA1E2;" src="./images/signup/grade6.png">
+				</div>				
+				<div class="control-group">
+					<input  type="text"  name="name" id="name"  placeholder="填写你的真实姓名">
+				</div>
+				<div class="control-group">
+					<input  type="text"  name="class" id="class1" placeholder="填写你的班级（两位数字）">
+				</div>
+				<div class="control-group">
+					<input  type="text"  name="goodat" id="goodat" placeholder="填写你的特长">
+				</div>
+				<div class="form-actions">
+					<button class="btn" type="submit" >提交</button>
+					<button class="btn" type="button" >重置</button>
+				</div>
+			</form>
+		</div>
+    </section>
+</div>
+</body>
+</html>

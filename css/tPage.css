@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#logofont{
+	width:690px;
+	font-size:46px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#026166;
+	margin:30px auto 0px auto;
+}
+
+#content{
+	display:table;
+	width:900px;
+	margin:30px auto 50px auto;
+	font-size:30px;
+	color:#00ABA9;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+}
+#content div{
+	background-color:#FFF;
+	float:left;
+}
+INPUT 
+{ 
+	border: 1px solid #DEDFDE;
+	font-size: 0.8em; 
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color: #000;
+	height: 50px; 
+	width:350px;
+	text-align: left; 
+}
+
+.f450{
+	width:450px;
+	height:550px;
+}
+.f100{
+	width:100px;
+	height:100px;
+}
+.f250{
+	width:250px;
+	height:400px;
+}
+.f250h100{
+	width:250px;
+	height:100px;
+}
+.f250h300{
+	width:250px;
+	height:300px;
+}
+.f150{
+	width:150px;
+	height:50px;
+}
+.fh200{
+	width:450px;
+	height:100px;
+}

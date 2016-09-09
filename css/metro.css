@@ -1,0 +1,49 @@
+﻿
+html,body{
+	min-width:700px;
+	min-height:450px;
+	background:url('../images/bg.png') no-repeat center 0; 
+	background-color:#004050;
+	background-attachment: fixed;
+}
+a:link {color: #C1C1C1;text-decoration:none;font-weight:lighter}     /* 未被访问的链接 灰色 没有下划线*/
+a:visited {color: #C1C1C1;text-decoration:none;font-weight:lighter}  /* 已被访问过的链接 灰色 没有下划线*/
+a:hover {color: #FFFFFF;text-decoration:none;font-weight:lighter}   /* 鼠标悬浮在上的链接 白色 没有下划线 下划线为underline 上划线为overline 无下划线为none*/
+a:active {color: #FFFFFF;text-decoration:none;font-weight:lighter}   /* 鼠标点中激活链接 白色 没有下划线*/
+
+
+#logofont{
+	width:690px;
+	margin-top:50px;
+	font-size:46px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#FFFFFF;
+	margin:80px auto 0px auto;
+}
+
+
+
+INPUT 
+{ 
+font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+padding-left: 10px;
+background: transparent;
+margin: 0px 25px 0px 0px; 
+border: 0px;
+
+} 
+
+
+.button{
+	vertical-align:middle;
+	background:transparent;
+	border:none;
+	text-indent:-99999px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+.button:hover{
+	background-position:left bottom;
+}

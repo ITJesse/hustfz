@@ -1,0 +1,159 @@
+<!--------------------------------------*Powered By ITJesse                    **大附中主页                            **Ver 2.0 Preview                       *---------------------------------------><!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.111cn.net/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>加入HustFZ</title>
+<link rel="stylesheet" type="text/css" href="css/reg_log.css" />
+</head>
+
+
+<link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+
+<script language="JavaScript" type="text/javascript">
+   
+   function checkform()
+	  {
+		  var f=document.forms("myform");
+		  if(f.username.value=="")
+		  {
+			alert("请填写用户名");
+			return false;
+		  }
+		  if(f.password1.value=="")
+		  {
+			alert("请填写密码");
+			return false;
+		  }
+		  if(f.password2.value=="")
+		  {
+			alert("请验证密码");
+			return false;
+		  }
+		  if(f.email.value=="")
+		  {
+			alert("请填写Email");
+			return false;
+		  }
+		  if(f.grade.value=="")
+		  {
+			alert("请填写年级");
+			return false;
+		  }
+		  if(f.name.value=="")
+		  {
+			alert("请填写名字");
+			return false;
+		  }
+		  
+		  return true;
+		  
+		  
+	  }
+      
+      </script>
+
+<script src="js/jquery-1.8.0.min.js"></script>
+<!--[if lt IE 7]>
+<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>    
+<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'>
+<a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a>
+</div>    
+<div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>      
+<div style='width: 75px; float: left;'><img src='.images/ie6nomore-warning.jpg' alt='Warning!'/></div>      
+<div style='width: 275px; float: left; font-family: Arial, sans-serif;'>        
+<div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>您正在使用已经过时的IE 6浏览器！</div>        
+<div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>由于IE 6的安全问题以及对互联网标准的支持问题，建议您升级您的浏览器，以达到更好的浏览效果！</div>     
+</div>      
+<div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='.images/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>      
+<div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='.images/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>      
+<div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='.images/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>      
+<div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='.images/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>    
+</div>  
+</div>  
+<![endif]-->
+
+<!--[if lt IE 9]> 
+    <script src="js/html5shiv-printshiv.js"></script> 
+<![endif]--> 
+<script> 
+     $(function(){ 
+          //autofocus 
+          $('[autofocus]:not(:focus)').eq(0).focus(); 
+           //placeholder 
+          var input = document.createElement("input"); 
+          if(('placeholder' in input)==false) { 
+               $('[placeholder]').focus(function() { 
+                    var i = $(this); 
+                    if(i.val() == i.attr('placeholder')) { 
+                         i.val('').removeClass('placeholder'); 
+                         if(i.hasClass('password')) { 
+                              i.removeClass('password'); 
+                              this.type='password'; 
+                         }               
+                    } 
+               }).blur(function() { 
+                    var i = $(this);     
+                    if(i.val() == '' || i.val() == i.attr('placeholder')) { 
+                         if(this.type=='password') { 
+                              i.addClass('password'); 
+                              this.type='text'; 
+                         } 
+                         i.addClass('placeholder').val(i.attr('placeholder')); 
+                    } 
+               }).blur().parents('form').submit(function() { 
+                    $(this).find('[placeholder]').each(function() { 
+                         var i = $(this); 
+                         if(i.val() == i.attr('placeholder')) 
+                              i.val(''); 
+                    }) 
+               }); 
+          } 
+     });          
+</script> 
+
+<body>
+<form id="myform" name="myform" method="post" action="register.php">
+	<div id="logofont">Register</div>
+	<div id="formarea">
+    	<div class="c1" style="margin-top:10px; margin-right:0; font-size:60px;">
+        		<p>简单一步</p>
+                <p>完成注册</p>
+        </div>
+        <div id="cright">
+        	<div class="c2" >
+            	<p>用户名：<input id="username" name="username" type="text" maxlength="12" onKeyUp="value=value.replace(/[\W]/g,'')" onpaste="value=value.replace(/[\W]/g,'')" oncontextmenu = "value=value.replace(/[\W]/g,'')" placeholder="6-12位英文与数字" /></p>
+                <p>Email&nbsp;&nbsp;：<input id="email" name="email" type="text" placeholder="输入Email" /></p>
+            </div>
+        	<div class="c3" style="background-color:#00ABA9; line-height:1.1;">
+            		<p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</p>
+                    <p><input id="password1" name="password1" type="password" maxlength="12" placeholder="输入6-12位密码" /></p>
+                    <p>确认密码:</p>
+                    <p><input id="password2" name="password2" type="password" maxlength="12" placeholder="验证输入的密码" /></p>
+            </div>
+        	<div class="c3" style="background-color:#1BA1E2; line-height:40px;">
+       		  <p>年级:</p>
+                 <p><select id="grade" size = "1" name="grade">
+				    <option value="0">&nbsp;&nbsp;请选择</option>
+                	<option value="1">&nbsp;&nbsp;高&nbsp;&nbsp;一</option>
+                	<option value="2">&nbsp;&nbsp;高&nbsp;&nbsp;二</option>
+                	<option value="3">&nbsp;&nbsp;高&nbsp;&nbsp;三</option>
+                	<option value="4">&nbsp;&nbsp;毕&nbsp;&nbsp;业</option>
+            	</select></p>
+                	<p>姓名：
+                       <input id="name" name="name" type="text" maxlength="10" onBlur="if (/[^\u4E00-\u9FA5]/g.test(this.value) ){alert('您的输入有误'); this.value='';this.focus();}" placeholder="输入中文作为昵称" /></p>
+         </div>
+        	<div class="c4" style="background-color:#A200FF">
+            		<input class="button" id="button1" type="submit" name="submit" value="" onClick="checkform();" />
+            </div>
+        	<div class="c4" style="background-color:#F09609">
+            		<input class="button" id="button2" type="reset" name="reset" value="" onClick="return sub(this.form)" />
+            </div><div class="w300" style="float:right ;margin-right:20; "><a href="index.php"><img src="images/gohome.png" border="0"></a></div>
+        </div>
+        
+    </div>
+   
+</form>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* CSS Document */
+@import url("metro.css");
+#logo{
+	width:600px;
+	height:150px;
+	font-size:46px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#FFFFFF;
+    float:left;
+	margin:100px auto 0px auto;
+
+}
+
+#login{
+	width:250px;
+	height:150px;
+	margin:100px auto 0px auto;
+	font-size:25px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#FFFFFF;
+	float:left;
+	text-align: right;
+	line-height:100%;
+}
+
+#content{
+	display:table;
+	width:900px;
+	margin:25px auto 50px auto;
+
+}
+
+#header .w8901{
+	width:890px;
+	background-color:#00ABA9;
+	margin:5px;
+	float:left;
+	text-align:left;
+	text-indent:40px;
+	font-size:25px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#FFFFFF;
+	line-height:0.8;
+}
+.w8902{
+	width:890px;
+	background-color:#F09609;
+	margin:5px;
+	float:left;
+	text-align:left;
+	text-indent:40px;
+	font-size:25px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#FFFFFF;
+	line-height:0.8;
+}
+
+#top10{
+	margin:0 auto;
+}
+.w170{
+	position:relative;
+	width:170px;
+	height:170px;
+	margin: 5px;
+	float:left;
+	background-color:#1BA1E2;
+}
+#select .w890{
+	width:890px;
+	margin:5px;
+	float:left;
+}
+
+.w170 a{
+	position:absolute;
+	width:170px;
+	height:170px;
+	color:#000;
+	border:1px solid transparent;
+	text-decoration:none;
+	top:0px;
+	left:0px;
+}
+.w170 a .outer{
+	display:block;
+	width:168px;
+	height:168px;
+}
+.w170 a .inner{
+	display:block;
+	width:166px;
+	height:166px;
+}
+.w170 a .note{
+	position:absolute;
+	bottom:0em;
+	width:9.5em;
+	height:1.5em;
+	padding:0.2em 0.5em;
+	background-color:#ffc;
+	text-align:center;
+	left:-3000000px;
+	color:#000;
+	margin-left:-85px;
+}
+.w170:hover a .note{
+	left:85px;	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;	
+}
+
+.w170:hover a .inner{
+	border:1px solid #fff;
+}
+
+#select .w890 div{
+	height:65px;
+	float:left;
+	margin:5px;
+	font-size:40px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#DEDFDE;
+	text-align:center;
+}
+
+.r1{
+	width:212.5px;
+	background-color:#1BA1E2;
+}
+.r2{
+	width:96.25px;
+	background-color:#339933;
+}
+.r3{
+	width:328.75px;
+	background-color:#F09609;
+}
+.r4{
+	width:435px;
+	background-color:#00ABA9;
+}
+
+#button1{
+	width:212.5px;
+ 	height:65px;
+	background-image: url(../images/button/chemistry.png);
+}
+
+#button2{
+	width:212.5px;
+	height:65px;
+	background-image: url(../images/button/biology.png);
+}
+
+#button3{
+	width:96.25px;
+	height:65px;
+	background-image: url(../images/button/history.png);
+}
+
+#button4{
+	width:328.75px;
+	height:65px;
+	background-image: url(../images/button/general_tech.png);
+}
+
+#button5{
+	width:435px;
+	height:65px;
+	background-image: url(../images/button/physics.png);
+}
+
+#button6{
+	width:96.25px;
+	height:65px;
+	background-image: url(../images/button/art.png);
+}
+
+#button7{
+	width:96.25px;
+	height:65px;
+	background-image: url(../images/button/music.png);
+}
+
+#button8{
+	width:222.5px;
+	height:65px;
+	background-image: url(../images/button/politics.png);
+}
+
+#button9{
+	width:328.75px;
+	height:65px;
+	background-image: url(../images/button/english.png);
+}
+
+#button10{
+	width:96.25px;
+	height:65px;
+	background-image: url(../images/button/pe.png);
+}
+
+#button11{
+	width:435px;
+	height:65px;
+	background-image: url(../images/button/chinese.png);
+}
+
+#button12{
+	width:212.5px;
+	height:65px;
+	background-image: url(../images/button/geography.png);
+}
+
+#button13{
+	width:212.5px;
+	height:65px;
+	background-image: url(../images/button/computer.png);
+}
+
+#button14{
+	width:435px;
+	height:65px;
+	background-image: url(../images/button/math.png);
+}
+
+#footer{
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    font-family: Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+}
+	

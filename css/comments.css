@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+	display:table;
+	width:432px;
+	height:500px;
+	margin:0;
+	font-size:20px;
+	font-family:Segoe UI, Microsoft YaHei, Helvetica, SimSun, "Trebuchet MS", Arial, sans-serif;
+	color:#026166;
+	text-align:left;
+	line-height:1.5;
+}
+#content div{
+	margin:0;
+	float:left;
+}
+
+.comment{
+	height:500px;
+	width:100%;
+	overflow: hidden;
+}
+.floor{
+	width:40px;
+	height:28px;
+}
+.name{
+	width:90px;
+	height:28px;
+}
+.com{
+	width:290px;
+	height:auto;
+}
